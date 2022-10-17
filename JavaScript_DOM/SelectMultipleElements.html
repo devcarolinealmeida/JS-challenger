@@ -1,14 +1,15 @@
-/* In this scenario, we are looking for a list of elements gathered in one variable - rather than only one element.
-Assign the list items in the view to the variable 'listItems' by using an appropriate selector method. */
+<!-- /* In this scenario, we are looking for a list of elements gathered in one variable - rather than only one element.
+Assign the list items in the view to the variable 'listItems' by using an appropriate selector method. */ -->
 
-{/* <ul id="list">
+<ul id="list">
 <li>OFF</li>
 <li>OFF</li>
 <li>OFF</li>
 <li>OFF</li>
 <li>OFF</li>
-<li>OFF</li></ul> */}
+<li>OFF</li></ul>
 
+<script>
 // assign the correct elements to the variable
 const listItems = document.querySelectorAll('#list li')
 
@@ -18,3 +19,5 @@ const handleHover = (event) => {
 if(listItems.length > 1) {
   listItems.forEach(item => item.addEventListener('mouseover', handleHover));
 }
+
+</script>
