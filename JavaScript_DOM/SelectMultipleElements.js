@@ -1,0 +1,20 @@
+/* In this scenario, we are looking for a list of elements gathered in one variable - rather than only one element.
+Assign the list items in the view to the variable 'listItems' by using an appropriate selector method. */
+
+{/* <ul id="list">
+<li>OFF</li>
+<li>OFF</li>
+<li>OFF</li>
+<li>OFF</li>
+<li>OFF</li>
+<li>OFF</li></ul> */}
+
+// assign the correct elements to the variable
+const listItems = document.querySelectorAll('#list li')
+
+const handleHover = (event) => {
+  return event.target.innerText = 'ON';
+};
+if(listItems.length > 1) {
+  listItems.forEach(item => item.addEventListener('mouseover', handleHover));
+}
